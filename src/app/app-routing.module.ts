@@ -1,3 +1,5 @@
+import { AuthGuardService } from './authguard/auth-guard.service';
+import { CheckOutComponent } from './check-out/check-out.component';
 import { LoginComponent } from './login/login.component';
 import { ProductsComponent } from './admin/products/products.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
@@ -15,6 +17,7 @@ const routes: Routes = [
   { path: 'myorders', component: MyOrdersComponent },
   { path: 'admin/orders', component: OrdersComponent },
   { path: 'admin/products', component: ProductsComponent },
+  { path: 'checkout', component: CheckOutComponent, canActivate: [AuthGuardService] },
   { path: '**', redirectTo: 'home' }
 ];
 

@@ -15,6 +15,7 @@ import { OrdersComponent } from './admin/orders/orders.component';
 import { ProductsComponent } from './admin/products/products.component';
 import { LoginComponent } from './login/login.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { CheckOutComponent } from './check-out/check-out.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     MyOrdersComponent,
     OrdersComponent,
     ProductsComponent,
-    LoginComponent
+    LoginComponent,
+    CheckOutComponent
 
   ],
   imports: [
