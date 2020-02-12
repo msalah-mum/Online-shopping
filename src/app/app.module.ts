@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { OrdersComponent } from './admin/orders/orders.component';
 import { ProductsComponent } from './admin/products/products.component';
+import { LoginComponent } from './login/login.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { ProductsComponent } from './admin/products/products.component';
     ShopingCartComponent,
     MyOrdersComponent,
     OrdersComponent,
-    ProductsComponent
+    ProductsComponent,
+    LoginComponent
 
   ],
   imports: [
@@ -30,7 +33,9 @@ import { ProductsComponent } from './admin/products/products.component';
     AppRoutingModule,
     NgbModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
+
 
   ],
   providers: [],
